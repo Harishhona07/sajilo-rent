@@ -1,0 +1,683 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 9999;
+    border-bottom: 1px solid black;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-logo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-logo img {
+    width: 10%;
+}
+
+.nav-login {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-login button {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.hero-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://img.freepik.com/free-photo/view-room-interior-with-furniture-copy-space_23-2150680550.jpg?t=st=1725329222~exp=1725332822~hmac=87366858a4e29e7f40fb890482e96ab2552e2dae49f6dd41c7a99e108c82cad7&w=900)
+}
+
+.discover-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.532);
+    padding: 25px;
+    gap: 25px;
+}
+
+.discover-heading {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.discover-heading h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.discover-heading p {
+    text-align: center;
+}
+
+#discover-form {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#discover-form input {
+    padding: 5px 10px;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    outline: none;
+}
+
+#discover-form button {
+    width: 25%;
+    background-color: white;
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.482);
+    cursor: pointer;
+}
+
+.aboutUs-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.welcome-title {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-title h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.welcome-para {
+    width: 50%;
+}
+
+.welcome hr {
+    width: 2px;
+    height: auto;
+    background-color: black;
+    border: none;
+    margin: 20px;
+}
+
+.break-line {
+    width: 100%;
+    height: .5px;
+    background-color: black;
+}
+
+.features {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.features h2 {
+    font-size: 2.8rem;
+}
+
+.features-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 55px;
+
+}
+
+.features-item {
+    text-align: center;
+}
+
+.features-item i {
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+.features-item h3 {
+    font-size: 1.5rem;
+}
+
+.book-now {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book-now button {
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.rooms-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.room-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title h2 {
+    margin-top: 20px;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.title p {
+    font-size: 1rem;
+}
+
+.title button {
+    margin-right: 10%;
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.title button i {
+    display: none;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.services-container {
+    height: 100vh;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services-list {
+    display: flex;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 20px;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.services-item {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border: 1px solid black;
+    padding: 30px 10px;
+    border-radius: 10px;
+}
+
+.services-item i {
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+.services-item h3 {
+    font-size: 2rem;
+}
+
+.services-item button {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    padding: 7px 14px;
+    font-size: 1.2rem;
+    border-radius: 7px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content img {
+    width: 50%;
+}
+
+.footer-contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-contact i {
+    color: white;
+    font-size: 2.2rem;
+}
+
+.footer-contact .socials {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-content .footer-group {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+#feedback-form input {
+    padding: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    background-color: transparent;
+}
+
+#feedback-form textarea {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.1rem;
+    background-color: transparent;
+    color: white;
+}
+
+#feedback-form button {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+/* Floating button */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 48px;
+    background-color: black;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border: 1px solid white;
+}
+
+/* Floating chat box */
+.chat-float {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.498);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all ease .3s;
+    color: black;
+
+
+}
+
+/* Arrow */
+.chat-float::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+}
+
+/* Chat icon inside the button */
+.chat-button i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.chatbot {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.chat-container {
+    padding: 20px;
+}
+
+.chat {
+    overflow-y: scroll;
+    padding: 10px;
+    height: 45vh;
+}
+
+/* Chatbot header */
+.chat-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-head .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-head .title h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.chat-head .close-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+/* Chat area */
+.chat {
+    margin-top: 15px;
+}
+
+.bot {
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+}
+
+.bot .icon {
+    margin-right: 10px;
+    color: #007bff;
+    font-size: 24px;
+}
+
+.bot .message-box {
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+}
+
+.user {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+
+.user .message-box {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Input area */
+.input-container {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input-field {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: 20px;
+}
+
+/*Slider CSS*/
+.wrapper {
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+
+}
+
+.wrapper i {
+    height: 50px;
+    width: 50px;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+
+}
+
+.wrapper i:first-child {
+    left: -22px;
+
+}
+
+.wrapper i:last-child {
+    right: -22px;
+
+}
+
+.wrapper .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+}
+
+.carousel.no-transition {
+    scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: auto;
+    list-style: none;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    width: 98%;
+    padding-bottom: 15px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card .img {
+    width: 100%;
+
+}
+
+.card .img img {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.card span {
+    color: #6a6d78;
+    font-size: 1.31rem;
+
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card-details h3 {
+    font-size: 1.3rem;
+}
+
+#book-now {
+    color: white;
+    background-color: black;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
